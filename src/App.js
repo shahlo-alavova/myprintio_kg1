@@ -6,7 +6,7 @@ import HeaderItem from './components/Header/header';
 import ImageTshirt from './components/ImageTshirt/imageTshirt';
 import RealisticviewButton from './components/RealisticView/RealisticViewButton';
 import 'primeflex/primeflex.css'
-import DropzoneComponenta from './components/Editing/Photo/dropzone';
+import DropzoneComponent from './components/Editing/Photo/dropzone';
 
 
 
@@ -19,7 +19,7 @@ function App() {
         <PhotoButton/>
         <TextButton/>
         <TextEditorToolbar/>
-        <DropzoneComponenta/> 
+        {/* <DropzoneComponent/>  */}
     </div>
   );
 }

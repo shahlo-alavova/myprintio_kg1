@@ -1,5 +1,6 @@
 import React, { useCallback,  useEffect, useMemo, useState  } from 'react';
 import { useDropzone } from 'react-dropzone';
+import './../../../App.css';
 
 const baseStyle = {
   display: 'flex',
@@ -12,7 +13,7 @@ const baseStyle = {
   borderStyle: 'dashed',
   backgroundColor: '#fafafa',
   color: '#bdbdbd',
-  transition: 'border .3s ease-in-out'
+  transition: 'border .3s ease-in-out',
 };
 
 const activeStyle = {
@@ -27,7 +28,7 @@ const rejectStyle = {
   borderColor: '#ff1744'
 };
 
-function DropzoneComponenta(props) {
+function DropzoneComponent(props) {
   
   const [files, setFiles] = useState([]);
 
@@ -74,7 +75,7 @@ function DropzoneComponenta(props) {
   }, [files]);
 
   return (
-    <section>
+    <section className='imageShirt'>
       <div {...getRootProps({style})}>
         <input {...getInputProps()} />
         <div>Drag and drop your images here.</div>
@@ -86,5 +87,5 @@ function DropzoneComponenta(props) {
   );
 }
 
-export default DropzoneComponenta;
+export default DropzoneComponent;
 
