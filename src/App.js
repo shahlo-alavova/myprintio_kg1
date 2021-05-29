@@ -6,7 +6,9 @@ import HeaderItem from './components/Header/header';
 import ImageTshirt from './components/ImageTshirt/imageTshirt';
 import RealisticviewButton from './components/RealisticView/RealisticViewButton';
 import 'primeflex/primeflex.css'
-import DropzoneComponent from './components/Editing/Photo/dropzone';
+// import DropzoneComponent from './components/Editing/Photo/dropzone';
+import imageMickey from './images/12.png'
+import Dropzone1 from './components/Editing/Photo/dropzone2';
 
 
 
@@ -19,7 +21,8 @@ function App() {
         <PhotoButton/>
         <TextButton/>
         <TextEditorToolbar/>
-        {/* <DropzoneComponent/>  */}
+        <Dropzone1/>
+        <img className="imgMickey" src={imageMickey}></img>
     </div>
   );
 }
