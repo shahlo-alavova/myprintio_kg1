@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+.app-wrapper {
+  display: grid;
+
+  grid-template-areas: 
+  "h h h"
+  "i i i"
+  "r r r"
+  "p p t"
+  "e e e";
+
+
+  grid-template-columns: repeat (3, 1fr);
+  grid-template-rows: repeat (7,1fr);
+
+}
+.headerItem{
+  grid-area: h;
+  background-color: antiquewhite;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.imageTshirt{
+  grid-area: i;
+  background-color: blue;
+  width: 300px;
+  height: 400px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.realisticViewButton{
+  grid-area: r;
+  background-color: aqua;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.photoButton{
+  grid-area: p;
+  background-color: brown;
 }
 
-.App-link {
-  color: #61dafb;
+.textButton{
+  grid-area: t;
+  background-color: blueviolet;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.textEditor{
+  grid-area:e;
+  background-color: chocolate;
 }
+
+.photoButton img {
+  width: 25px;
+  height: 25px;
+}
+
+/* const baseStyle = {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  padding: '20px',
+  borderWidth: 2,
+  borderRadius: 2,
+  borderColor: '#eeeeee',
+  borderStyle: 'dashed',
+  backgroundColor: '#fafafa',
+  color: '#bdbdbd',
+  transition: 'border .3s ease-in-out' */
+/* }; */
+
+/* const activeStyle = {
+  borderColor: '#2196f3'
+};
+
+{
+  borderColor: '#00e676'
+};
+
+rejectStyle {
+  borderColor: '#ff1744'
+}; */

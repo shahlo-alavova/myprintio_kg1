@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import PhotoButton from './components/Editing/Photo/photoButton';
+import TextButton from './components/Editing/Text/textButton';
+import TextEditorToolbar from './components/Editing/Text/TextEditor/textEditorToolbar';
+import HeaderItem from './components/Header/header';
+import ImageTshirt from './components/ImageTshirt/imageTshirt';
+import RealisticviewButton from './components/RealisticView/RealisticViewButton';
+import 'primeflex/primeflex.css'
+import DropzoneComponenta from './components/Editing/Photo/dropzone';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-wrapper">
+        <HeaderItem/>
+        <ImageTshirt/>
+        <RealisticviewButton/>
+        <PhotoButton/>
+        <TextButton/>
+        <TextEditorToolbar/>
+        <DropzoneComponenta/> 
     </div>
   );
 }
