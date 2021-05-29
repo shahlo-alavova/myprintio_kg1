@@ -75,3 +75,16 @@
 rejectStyle {
   borderColor: '#ff1744'
 }; */
+
+.tshirtWrap {
+position: relative;
+text-align: center;
+color: white
+}
+
+.textTshirt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
